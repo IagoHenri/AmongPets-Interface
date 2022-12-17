@@ -1,0 +1,87 @@
+#div_1{
+    min-height: 50px;
+    width: 49%;
+    float: left;
+}
+#div_2{
+    min-height: 50px;
+    width: 49%;
+    float: right;
+}
+#div_3{
+    min-height: 50px;
+    width: 49%;
+    float: left;
+}
+#div_4{
+    min-height: 50px;
+    width: 49%;
+    float: right;
+}
+#div_btn{
+    min-height: 50px;
+    width: 10%;
+    float: center;
+}
+
+.container{
+    width: auto;
+    height: auto;
+    margin: auto;
+    background-color:rgba(255, 255, 255, 0.651);
+}
+
+@media screen and (min-width: 1280px) {
+    .container {width: 1200px; height: auto; float: center; position: static;}
+}
+
+#div_infPS{
+    min-height: 50px;
+    width: 96%;
+    margin-top: -5px;
+    float: center;
+    margin: 20px;
+}
+
+#div_ende{
+    min-height: 50px;
+    width: 50%;
+    margin-top: -5px;
+    float: right;
+    margin: 20px;
+}
+
+#div_img{
+    min-height: 50px;
+    width: 50%;
+    margin-top: -5px;
+    float: center;
+    margin: 20px;
+}
+#div_img img{width: 300px;}
+
+#divag{
+    min-height: 10px;
+    width: 97%;
+    margin-top: -5px;
+    margin: 20px;
+}
+
+
+#div_mPS{
+    min-height: 10px;
+    width: 96%;
+    margin-top: -5px;
+    float: center;
+    margin: 20px;
+}
+
+#div_mPS img{width: 250px;}
+
+#div_mPS2{
+    min-height: 50px;
+    width: 50%;
+    margin-top: -5px;
+    float: center;
+    margin: 20px;
+}

@@ -1,0 +1,46 @@
+.botoesPrincipais {
+    padding: 11px 40px;
+    border-radius: 30px;
+
+    
+    background-color: #ffcc00 !important;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0026ff), color-stop(100%,#0026ff)) !important;
+    background: -webkit-linear-gradient(top, #405dff, #0026ff) !important;
+    background: -moz-linear-gradient(top, #0026ff, #0026ff) !important;
+    background: -ms-linear-gradient(top, #0026ff, #0026ff) !important;
+    background: -o-linear-gradient(top, #0026ff, #0026ff) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcc00', endColorstr='#ff6600',GradientType=0 );
+    
+    font-family:"Bahnschrift";
+    font-weight: 300;
+    font-size: 30px;
+    color: #fff;
+    text-shadow: 0 1px 0 #666;
+    
+    box-shadow: inset 0 1px 1px #fff, 0 2px 3px #666;
+    cursor:pointer;
+    position: relative;
+}
+
+.botaocliente {
+    padding: 11px 50px;
+    border-radius: 30px;
+    
+    background-color: #ffcc00 !important;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0026ff), color-stop(100%,#0026ff)) !important;
+    background: -webkit-linear-gradient(top, #405dff, #0026ff) !important;
+    background: -moz-linear-gradient(top, #0026ff, #0026ff) !important;
+    background: -ms-linear-gradient(top, #0026ff, #0026ff) !important;
+    background: -o-linear-gradient(top, #0026ff, #0026ff) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcc00', endColorstr='#ff6600',GradientType=0 );
+        
+    font-family:"Bahnschrift";
+    font-weight: 300;
+    font-size: 30px;
+    color: #fff;
+    text-shadow: 0 1px 0 #666;
+        
+    box-shadow: inset 0 1px 1px #fff, 0 2px 3px #666;
+    cursor:pointer;
+    position: relative;
+}

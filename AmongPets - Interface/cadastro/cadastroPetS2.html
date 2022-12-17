@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Among Pets - Cadastre-se</title>
+    <link rel="shortcut icon" href="../img/icone.ico" type="image/x-icon" /> <!--Icone na aba do chrome-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Site para o melhor serviço de agendamento de Pet Shops">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/btn.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/scrollbar.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/divs.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="main.js"></script>
+</head>
+
+<body>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <br><br>
+    <h1 align="center"><img src="../img/logo.png" width="230px"></h1> <!--Logo-->
+    <br>
+    <h1 align="center" class="borda_texto"><font face="Bahnschrift" size="50px" class="espacolinha">Cadastrar como Pet Shop</font></h1><br>
+
+
+<form class="form2">      <!--Formulário de Cadastro do PetShop-->
+
+    <h1><font face="Bahnschrift">Sobre o Pet Shop:</font></h1>
+    <font face="Bahnschrift">
+<div id="div_1"><br>
+    <h1>CNPJ <br><input type="text" class="caixaTexto"></h1><br>  <!--CNPJ-->
+    <h1>Razão Social <br><input type="text" class="caixaTexto"></h1><br>  <!--Razão Social-->
+</div>
+<div id="div_2"><br>
+    <h1>Nome do Pet Shop <br><input type="text" class="caixaTexto"></h1><br>  <!--Nome do PetShop-->
+    <h1>Telefone <br><input type="text" class="caixaTexto"></h1><br>  <!--Telefone deo PetShop-->
+</div>
+
+<h1><!--Endereço-->
+<div id="div_3"> <!--Endereço-->
+    Endereço:<br>
+    <label for="cep">CEP<br></label><input class="caixaTexto" id="cep" type="text" required/><br>
+    <label for="complemento">Complemento<br></label><input class="caixaTexto" id="complemento" type="text"/><br>
+    <label for="bairro">Bairro<br></label><input class="caixaTexto" id="bairro" type="text" required/><br>
+    <label for="uf">Estado<br></label>
+	<select id="uf" class="caixaTexto"> <!--Estado-->
+        <option>Escolha seu estado</option>
+		<option value="AC">Acre</option>
+		<option value="AL">Alagoas</option>
+		<option value="AP">Amapá</option>
+		<option value="AM">Amazonas</option>
+		<option value="BA">Bahia</option>
+        <option value="CE">Ceará</option>
+        <option value="DF">Distrito Federal</option>
+		<option value="ES">Espírito Santo</option>
+		<option value="GO">Goiás</option>
+		<option value="MA">Maranhão</option>
+        <option value="MT">Mato Grosso</option>
+        <option value="MS">Mato Grosso do Sul</option>
+		<option value="MG">Minas Gerais</option>
+		<option value="PA">Pará</option>
+		<option value="PB">Paraíba</option>
+		<option value="PR">Paraná</option>
+		<option value="PE">Pernambuco</option>
+		<option value="PI">Piauí</option>
+		<option value="RJ">Rio de Janeiro</option>
+		<option value="RN">Rio Grande do Norte</option>
+		<option value="RS">Rio Grande do Sul</option>
+		<option value="RO">Rondônia</option>
+		<option value="RR">Roraima</option>
+		<option value="SC">Santa Catarina</option>
+		<option value="SP">São Paulo</option>
+		<option value="SE">Sergipe</option>
+		<option value="TO">Tocantins</option>
+    </select> <br><br>
+</div>
+<div id="div_4"><br> <!--Endereço-->
+	<label for="logradouro">Rua<br></label><input align="left" class="caixaTexto"id="logradouro" type="text" required/><br>
+    <label for="numero">Número<br></label><input class="cxNum" id="numero" type="text" /><br>
+    <label for="cidade">Cidade<br></label><input class="caixaTexto" id="cidade" type="text" required/>
+</div>
+</h1>
+
+<script type="text/javascript"> /*Preenchimento por CEP*/
+    $("#cep").focusout(function(){
+        $.ajax({
+            url: 'https://viacep.com.br/ws/'+$(this).val()+'/json/unicode/',
+            dataType: 'json',
+            success: function(resposta){
+                $("#logradouro").val(resposta.logradouro);
+                $("#complemento").val(resposta.complemento);
+                $("#bairro").val(resposta.bairro);
+                $("#cidade").val(resposta.localidade);
+                $("#uf").val(resposta.uf);
+                $("#numero").focus();
+            }
+        });
+    });
+</script>
+<br><br>
+
+<div id="div_btn"><br>
+    <input type="button" class="botoesPrincipais" value="Cadastrar-se!"> <!--Botão de cadastro #-#  Ainda não tem nenhuma função-->
+</div>
+</form>
+
+<br>
+    <h2 align="center">Já tem um cadastro? Faça <a href="../telalogin.html">Login</a></h2>
+
+    <br>
+    <br>
+    <h2 align="center"><a href="cadastroPetS.html">Voltar</a></h2>
+</font>
+</body>
+</html>

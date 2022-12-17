@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Among Pets - Cadastre-se</title>
+    <link rel="shortcut icon" href="../img/icone.ico" type="image/x-icon" /> <!--Icone na aba do chrome-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Site para o melhor serviço de agendamento de Pet Shops">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/btn.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <br><br>
+    <h1 align="center"><img src="../img/logo.png" width="230px"></h1> <!--Logo-->
+    <br>
+    <h1 align="center" class="borda_texto"><font face="Bahnschrift" size="50px" class="espacolinha">Cadastre-se</font></h1><br>
+    <h2 align="center"><font face="Bahnschrift" class="espacolinha">Como você gostaria de se cadastrar?</font></h2><br><br>
+    <h1 align="center"><input type="button" class="botaocliente" value="Cliente" onClick="escolhacadastrocliente()"></h1><br>        <!--Botão Cliente-->
+    <h1 align="center"><input type="button" class="botoesPrincipais" value="Pet Shop" onClick="escolhacadastropetshop()"></h1><br><br>                                   <!--Botão Dono PS-->
+    <h2 align="center"><font face="Bahnschrift">Já tem um cadastro? Faça <a href="telalogin.html">Login</a></font></h2>
+    <br>
+    <br>
+    <h2 align="center"><font face="Bahnschrift"><a href="../index.html">Voltar ao início</a></font></h2>
+
+    <script>
+        function escolhacadastrocliente()  //Botão que redireciona para a tela de cadastro do cliente
+        {
+        location.href= "telacadastrocliente.html"
+        }
+
+        function escolhacadastropetshop()  //Botão que redireciona para a tela de cadastro do Pet Shop
+        {
+        location.href= "cadastroPetS.html"
+        }
+    </script>
+
+</body>
+</html>

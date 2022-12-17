@@ -1,0 +1,139 @@
+body{
+    background-size: 1400px;
+    background: url(../img/fundo.jpeg)  center center no-repeat fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+a{
+    text-decoration:none;
+}
+
+    
+.espacolinha {
+    line-height: 50%;
+}
+
+
+.caixaTexto {
+    padding: 11px 10px;
+        
+    font-family:"Bahnschrift";
+    font-weight: 300;
+    font-size: 30px;
+    color: #000000;
+    text-shadow: 0 1px 0 #666;
+        
+    box-shadow: inset 0 1px 1px #fff, 0 2px 3px #666;
+    border-radius: 10px;
+    position: relative;
+}
+.cxNum {
+    padding: 11px 10px;
+        
+    font-family:"Bahnschrift";
+    font-weight: 300;
+    font-size: 30px;
+    color: #000000;
+    text-shadow: 0 1px 0 #666;
+    
+    box-shadow: inset 0 1px 1px #fff, 0 2px 3px #666;
+    border-radius: 10px;
+    position: relative;
+}
+
+form {
+    /* Apenas para centralizar o form na página */
+    margin: 0 auto;
+    width: 500px;
+    /* Para ver as bordas do formulário */
+    padding: 1em;
+    border: 3px solid #CCC;
+    border-radius: 1em;
+    background-color: #9c9c9c7c;
+}
+.form2 {
+    /* Apenas para centralizar o form na página */
+    margin: 0 auto;
+    width: 850px;
+    /* Para ver as bordas do formulário */
+    padding: 1em;
+    border: 3px solid #CCC;
+    border-radius: 1em;
+    background-color: #9c9c9c7c;
+}
+
+
+.borda_texto{
+    -webkit-text-stroke-width: 0.3px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+    color: #000000;
+}
+
+
+*{margin: 0; padding: 0; border: none; outline: none; box-sizing: border-box;}
+
+/*CABEÇALHO*/
+.cabecalho {
+    width: 100%; float: left; padding: 3% 4%;
+}
+.logo {
+    width: 230px; float: left; font-size: 0;
+}
+.btn-menu{
+    width: 56px; height: 56px; float: right;
+    text-align: center; color: rgb(255, 255, 255); border-radius: 60px;
+    cursor: pointer; background: linear-gradient(to top,#0026ff,#8b9cfa)
+}
+
+
+/*RODAPÉ*/
+
+.rodape{width: 100%; float: left; padding: 3% 4%; text-align: center; background: linear-gradient(to top,#0026ff,#8b9cfa);}
+.social-icons a{font-size: 1.5em; color: rgba(255, 255, 255, 0.7); margin-right: 3%;}
+.social-icon a:last-child {margin-right: 0;}
+.social-icons a:hover {color: rgba(255, 255, 255);}
+.copyright{margin-top: 2%; color: rgba(255, 255, 255, 0.7);}
+
+
+/*MENU*/
+
+.menu{ display: none; width: 100%; height: 100%; position: fixed; background-color: rgba(0, 0, 0, 0.849); top: 0; left: 0;}
+.btn-close{font-size: 3em; color: #fff; float: right; cursor: pointer; margin-right: 5%;}
+.menu ul{ width: 100%; float: left; text-align: center; list-style-type: none;}
+.menu li{ padding: 1.5%;}
+.menu li a{ font-size: 2.5em; color: #fff; padding: 1.5% 3%;}
+.menu li a:hover {border: 2px solid #0026ff; border-radius: 10px}
+
+
+/*========MOBILE FIRST========*/
+@media screen and (min-width: 1280px) {
+    .btn-menu {display: none;}
+    .btn-close {display: none;}
+    .menu {width: auto; height: 56px; line-height: 56px; float: right; display: block; position: static; background-color: rgb(160, 160, 160); border-radius: 30px; font-size: 20px;}
+    .menu li {padding: 0; float: left;}
+    .menu li a {font-size: 1em; padding: 50px;}
+    .menu li a:hover {border: none; color: #fff;}
+}
+
+#tabela th{
+    background-color: #0026ff;
+    color: white;
+
+    border-radius: 5px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+#tabela {
+    font: 100% sans-serif;
+    background-color: #efe;
+    border: 1px solid rgb(119, 151, 170);
+    }
+
+  
+  /* body */
+  #tabela td {
+    background-color: rgba(87, 249, 255, 0.363);
+    padding:.5em .5em .5em 1em;
+    }
